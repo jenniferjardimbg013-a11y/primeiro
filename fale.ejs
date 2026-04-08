@@ -1,0 +1,23 @@
+<%- include('cabecalho.ejs')%>
+<h1> Fale Conosco</h1>
+<div>
+    <form method="post"><br>
+       <label for="txtNome">Nome: </label> 
+        <input type="text" name="txtNome">
+        <br>
+        <label for="txtAssunto">Assunto:</label>
+        <select name="txtAssunto" id="txtAssunto">
+        <option value="">Selecione</option>
+        <option value=""> Duvida </option>
+        <option value="">Troca</option>
+        <option value="">Outro</option>
+        </select>
+        <br>
+        <label for="txtMsg"> Msg: </label>
+        <textarea name="txtMsg" id="txtMsg"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</div>
+<%- include('rodape.ejs') %> 
