@@ -1,0 +1,52 @@
+     <%-include('../cabecalho.ejs')%>
+     <header>
+        <h3>Adicionar novo professor</h3>
+      </header>
+      <div class="content">
+        <form id="form-instrumento" method="post" autocomplete="off" action="/professor/add/ok">
+          <div class="grid">
+            <div>
+              <label for="nome">Nome do professor</label>
+              <input id="nome" name="nome" type="text" required>
+            </div>
+            <div>
+              <label for="cpf">CPF do professor</label>
+              <input id="cpf" name="cpf" type="text" required>
+            </div>
+            <div>
+              <label for="nasc">Data de nascimento</label>
+              <input id="nasc" name="nasc" type="text" required>
+            </div>
+            <div>
+              <label for="contrata">Data de contratação(hoje)</label>
+              <input id="contrata" name="contrata" type="text" required>
+            </div>
+            <div>
+              <div>
+              <label for="sala">Salas</label>
+              <select id="sala" name="sala" required>
+                <option value="" disabled selected>Selecione a sala</option>
+                <option>101</option>
+                <option>102</option>
+                <option>103</option>
+                <option>105</option>
+                <option>201</option>
+                <option>202</option>
+                <option>203</option>
+                <option>204</option>
+                <option>205</option>
+              </select>
+            </div>
+            <div>
+              <label for="salario">Seu sálario</label>
+              <input id="salario" name="salario" type="text" required>
+            </div>
+           <div class="field-help">Os campos com * são obrigatórios.</div>
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/professor/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Adicionar professor</button>
+          </footer>
+        </form>
+      </div>
+
+      <%-include('../rodape.ejs')%>
